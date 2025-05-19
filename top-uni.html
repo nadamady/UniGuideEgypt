@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Universities in Egypt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: rgba(201, 212, 201, 0.482);
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="UniGuide Logo">
+        </div>
+        <div class="search-container">
+          <div class="Search-box">
+          <input type="text" class="search-input" onkeyup="search()" placeholder="Search universities...">
+          <script>
+            function search() {
+                const input = document.querySelector('.search-input').value.toUpperCase();
+                const containers = document.querySelectorAll('.university-container');
+            
+                containers.forEach(container => {
+                    const titleElement = container.querySelector('h2');
+                    const title = titleElement ? titleElement.innerText.toUpperCase() : "";
+                    
+                    if (title.includes(input)) {
+                        container.style.display = "";
+                    } else {
+                        container.style.display = "none";
+                    }
+                });
+            }
+            </script>
+            
+
+      </div>
+      </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="private.html">Private</a>
+            <a href="National.html">National</a>
+            <a href="State-Funded.html" > State-Funded</a>
+            <a href="pages/Top-Uni.html" class="active">Top Universities </a>
+        </div>
+    </nav>
+    <div class="accommodation-table-container">
+      <h2>Top Egyptian Universities in 2025</h2>
+      <table class="accommodation-table">
+          <thead>
+              <tr>
+                  <th>Egypt University Rankings</th>
+                  <th>University</th>
+                  <th>Overall</th>
+                  <th>World University Rankings</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr><td class="rank">1st</td><td class="university">Cairo University</td><td class="score">4.80 <span class="star">★</span></td><td>371</td></tr>
+            <tr><td class="rank">2nd</td><td class="university">Ain Shams University</td><td class="score">4.70 <span class="star">★</span></td><td>721-730</td></tr>
+            <tr><td class="rank">3rd</td><td class="university">Mansoura University</td><td class="score">4.65 <span class="star">★</span></td><td>1001-1200</td></tr>
+            <tr><td class="rank">4th</td><td class="university">Alexandria University</td><td class="score">4.60 <span class="star">★</span></td><td>901-950</td></tr>
+            <tr><td class="rank">5th</td><td class="university">Zagazig University</td><td class="score">4.50 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">6th</td><td class="university">Assiut University</td><td class="score">4.48 <span class="star">★</span></td><td>1001-1200</td></tr>
+            <tr><td class="rank">7th</td><td class="university">Tanta University</td><td class="score">4.45 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">8th</td><td class="university">Al-Azhar University</td><td class="score">4.42 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">9th</td><td class="university">Helwan University</td><td class="score">4.40 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">10th</td><td class="university">Benha University</td><td class="score">4.35 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">11th</td><td class="university">Suez Canal University</td><td class="score">4.30 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">12th</td><td class="university">Minia University</td><td class="score">4.28 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">13th</td><td class="university">South Valley University</td><td class="score">4.26 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">14th</td><td class="university">Beni-Suef University</td><td class="score">4.25 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">15th</td><td class="university">Fayoum University</td><td class="score">4.24 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">16th</td><td class="university">Sohag University</td><td class="score">4.23 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">17th</td><td class="university">Kafr El Sheikh University</td><td class="score">4.21 <span class="star">★</span><td>—</td></tr>
+            <tr><td class="rank">18th</td><td class="university">Damietta University</td><td class="score">4.20 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">19th</td><td class="university">Damanhour University</td><td class="score">4.18 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">20th</td><td class="university">Port Said University</td><td class="score">4.17 <span class="star">★</span></td><td>—</td></tr>       
+            <tr><td class="rank">21st</td><td class="university">Aswan University</td><td class="score">4.16 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">22nd</td><td class="university">October 6 University</td><td class="score">4.15 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">23rd</td><td class="university">Misr University for Science and Technology</td><td class="score">4.14 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">24th</td><td class="university">German University in Cairo</td><td class="score">4.13 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">25th</td><td class="university">British University in Egypt</td><td class="score">4.12 <span class="star">★</span></td><td>1201-1400</td></tr>
+            <tr><td class="rank">26th</td><td class="university">Future University in Egypt</td><td class="score">4.11 <span class="star">★</span></td><td>1001-1200</td></tr>
+            <tr><td class="rank">27th</td><td class="university">Pharos University in Alexandria</td><td class="score">4.10 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">28th</td><td class="university">Nile University</td><td class="score">4.09 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">29th</td><td class="university">Modern Sciences and Arts University</td><td class="score">4.08 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">30th</td><td class="university">Arab Academy for Science, Technology and Maritime Transport</td><td class="score">4.07 <span class="star">★</span><td>1001-1200</td></tr>
+            <tr><td class="rank">31st</td><td class="university">Egypt-Japan University of Science and Technology</td><td class="score">4.06 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">32nd</td><td class="university">American University in Cairo</td><td class="score">4.05 <span class="star">★</span></td><td> 1945</td></tr>
+            <tr><td class="rank">33rd</td><td class="university">Ahram Canadian University</td><td class="score">4.04 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">34th</td><td class="university">Nahda University in Beni Suef</td><td class="score">4.03 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">35th</td><td class="university">Delta University for Science and Technology</td><td class="score">4.02 <span class="star">★</span><td>—</td></tr>
+            <tr><td class="rank">36th</td><td class="university">Sinai University</td><td class="score">4.01 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">37th</td><td class="university">Horus University</td><td class="score">4.00 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">38th</td><td class="university">New Giza University</td><td class="score">3.99 <span class="star">★</span><td>—</td></tr>
+            <tr><td class="rank">39th</td><td class="university">Badr University in Cairo</td><td class="score">3.98 <span class="star">★</span><td>—</td></tr>
+            <tr><td class="rank">40th</td><td class="university">University of Sadat City</td><td class="score">3.97 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">41st</td><td class="university">Egyptian Russian University</td><td class="score">3.96 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">42nd</td><td class="university">Misr International University</td><td class="score">3.95 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">43rd</td><td class="university">Canadian International College</td><td class="score">3.94 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">44th</td><td class="university">Egyptian Chinese University</td><td class="score">3.93 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">45th</td><td class="university">Al-Alamein International University</td><td class="score">3.92 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">46th</td><td class="university">Galala University</td><td class="score">3.91 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">47th</td><td class="university">King Salman International University</td><td class="score">3.90 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">48th</td><td class="university">New Mansoura University</td><td class="score">3.89 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">49th</td><td class="university">Zewail City of Science and Technology</td><td class="score">3.88 <span class="star">★</span></td><td>—</td></tr>
+            <tr><td class="rank">50th</td><td class="university">International University of El Alamein</td><td class="score">3.87 <span class="star">★</span></td><td>—</td></tr>
+            
+        </tbody>
+        </table>
+        </div>
+
+            
+
+            <div class="faq-section">
+              <h2>Frequently Asked Questions (FAQs)</h2>
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">1. When do university applications open in Egypt? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  Most private universities start applications around June or July, while public university coordination (Tansik) opens after Thanaweya Amma results are released, typically in August.
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">2. Can I apply to multiple universities at once? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  Yes, you can apply to multiple private or national universities, but each has its own application system. For public universities, you must go through the Tansik portal.
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">3. What certificates are accepted for admission? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  <ul>
+                    <li>Thanaweya Amma (Egyptian general secondary)</li>
+                    <li>Azhar certificate</li>
+                    <li>IGCSE/GCSE</li>
+                    <li>American Diploma</li>
+                    <li>IB (International Baccalaureate)</li>
+                    <li>STEM Schools</li>
+                    <li>Other national/international systems (with specific rules)</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">4. What is the minimum grade for applying to private universities? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  It varies yearly and by faculty. For example, Medicine may require 85–90%, while Business or IT may accept 60–70%. Always check the latest thresholds.
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">5. Do universities offer scholarships or financial aid? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  Yes, many private and international universities offer:
+                  <ul>
+                    <li>Academic excellence scholarships</li>
+                    <li>Need-based discounts</li>
+                    <li>Sibling discounts</li>
+                    <li>Sports or special talent scholarships</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">6. Is the application process online or in-person? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  Most private and international universities have online applications. Public universities use the Tansik e-portal.
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">7. Can I transfer from one university to another? <span class="chevron">⌄</span></div>
+                <div class="content">
+                  Yes, but you must meet the target university's transfer rules, including:
+                  <ul>
+                    <li>Minimum GPA</li>
+                    <li>Curriculum compatibility</li>
+                    <li>Number of transferable credit hours</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+            <script>
+              function toggleAccordion(item) {
+                item.classList.toggle('active');
+              }
+            </script>
+
+
+<div class="green-container">
+  <img src="images/allunis.png" alt="University">
+  <div class="text">
+    <h2>Top Universities in Egypt</h2>
+    <p>Discover the best public and private universities, their rankings, and everything you need to apply successfully.</p>
+  </div>
+</div>
+            
+</body>
+
+
+
+</html>
+      

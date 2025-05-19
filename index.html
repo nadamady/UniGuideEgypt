@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniGuide - Find Your Ideal University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="UniGuide Logo">
+        </div>
+        <div class="search-container">
+            <div class="Search-box">
+            
+            <input type="text" class="search-input" onkeyup="search()" placeholder="Search universities...">
+
+
+        </div>
+        </div>
+
+        <script>
+          (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="DcmD_3Weer-T73B2KO5S8";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+          </script>
+  
+
+        <script>
+            function search() {
+                const input = document.querySelector('.search-input').value.toUpperCase();
+                const containers = document.querySelectorAll('.university-container');
+            
+                containers.forEach(container => {
+                    const titleElement = container.querySelector('h2');
+                    const title = titleElement ? titleElement.innerText.toUpperCase() : "";
+                    
+                    if (title.includes(input)) {
+                        container.style.display = "";
+                    } else {
+                        container.style.display = "none";
+                    }
+                });
+            }
+            </script>
+            
+        <div class="nav-links">
+            <a href="pages/index.html" class="active">Home</a>
+            <a href="private.html">Private</a>
+            <a href="National.html">National</a>
+            <a href="State-Funded.html">State-Funded</a>
+            <a href="Top-Uni.html">Top Universities</a>
+        </div>
+    </nav>
+
+          <script>
+            const crypto = require('crypto');
+        
+        const secret = 'yoyc3phtoki20gxkntb6pifqtv16dg9p'; 
+        const userId = current_user.id 
+        
+        const hash = crypto.createHmac('sha256', secret).update(userId).digest('hex');
+        </script>
+
+      <div class="hero-section">
+        <div class="overlay">
+          <div class="hero-text hidden">
+            
+            <h1>Welcome to UniGuide!🎓</h1>
+              <h2> universities across Egypt, compare your options, and find the perfect fit for your future, all in one place</h2>
+          </div>
+          </div>
+        </div>
+      </div>
+      <script>
+  
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach(el => observer.observe(el));
+      });
+      </script>
+
+
+
+
+    <!-- quick facts section -->
+<section class="quick-facts">
+    <div class="container">
+      <h2>🎓 Quick Facts About Universities in Egypt</h2>
+      <div class="facts-grid">
+        
+        <div class="fact-box">
+          <h3>🏛️ Private Universities</h3>
+          <p>26 Universities</p>
+          <small>Modern programs with international partnerships</small>
+        </div>
+  
+        <div class="fact-box">
+          <h3>🌐 National Universities</h3>
+          <p>8 active universities</p>
+          <small>State-owned, independently managed</small>
+        </div>
+  
+        <div class="fact-box">
+          <h3>🏫 Public Universities</h3>
+          <p>30 institutions</p>
+          <small>Largest enrollment, symbolic tuition</small>
+        </div>
+  
+        <div class="fact-box">
+          <h3>📚 Programs Offered</h3>
+          <p>1000+ programs</p>
+          <small>Engineering, Medicine, AI, Business & more</small>
+        </div>
+  
+        <div class="fact-box">
+          <h3>🏙️ Geographic Reach</h3>
+          <p>27+ cities</p>
+          <small>From Cairo to New Alamein and Upper Egypt</small>
+        </div>
+  
+        <div class="fact-box">
+          <h3>💰 Tuition Range</h3>
+          <p>0 – 200,000+ EGP/year</p>
+          <small>Public, National, and Private options</small>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+<!---->
+<section class="section-featured">
+    <h2 class="section-title">Universities With Different Branches</h2>
+  
+    <div class="carousel-arrow left">&#8249;</div>
+  
+    <div class="uni-card-grid carousel-container">
+      <!-- Sinai University -->
+      <div class="uni-card active">
+        <h3 class="uni-name">Sinai University</h3>
+        <p class="uni-meta">Type: State-Funded • Cities: Al-Arish, El Qantara (Ismailia)</p>
+        <p class="uni-fee">Sinai University operates multiple campuses across Egypt to serve a wider student population. Below are its two main branches with distinct academic environments and facilities:</p>
+      
+        <div class="uni-images">
+          <div class="campus">
+            <img src="https://su.edu.eg/wp-content/uploads/2021/05/Arish-thumbnail.png" alt="Al-Arish Campus">
+            <p>Al-Arish Campus (Main)</p>
+            <a href="https://maps.app.goo.gl/ZfbCSvtpWW3f4osN7" class="uni-link">View on Map</a>
+          </div>
+          <div class="campus">
+            <img src="https://www.su.edu.eg/wp-content/uploads/2021/05/Kantara-thumbnail.jpg" alt="El Qantara Campus">
+            <p>El Qantara Campus (Ismailia)</p>
+            <a href="https://maps.app.goo.gl/UJLJs1J37M3eiu687" class="uni-link">View on Map</a>
+          </div>
+        </div>
+      </div>
+      <!--badr-->
+      <div class="uni-card active">
+        <h3 class="uni-name">Badr University</h3>
+        <p class="uni-meta">Type: Private • Cities: Badr City (Cairo), Assiut</p>
+        <p class="uni-fee">Top-ranked university with rich history and modern research facilities.</p>
+        <div class="uni-images center">
+          <div class="campus">
+            <img src="https://oktamam.com/wp-content/uploads/2023/12/3-2.jpg" alt="Badr City Campus">
+            <p>Main Campus – Badr City (Cairo)</p>
+            <a href="https://maps.app.goo.gl/g2gzqunafP6VeCAd8" class="uni-link">View on Map</a>
+          </div>
+          <div class="campus" style="width: 43%; text-align: center;">
+            <img src="https://www.egyptianeducation.com/ImageHandler.ashx?Id=18180&SS=3c29df4115ab50a511562d34707c8638" alt="Assiut Campus">
+            <p>Assiut</p>
+            <a href="https://maps.app.goo.gl/Hy56NxDmu1KdGfah8" class="uni-link">View on Map</a>
+          </div>
+        </div>
+      </div>
+      <!--AASMT-->
+      
+      <div class="uni-card active">
+        <h3 class="uni-name">AASTMT</h3>
+        <p class="uni-meta">Type: National • Cities: Alexandria, Cairo, Giza</p>
+        <p class="uni-fee">The Arab Academy for Science, Technology & Maritime Transport operates multiple campuses across Egypt with a strong focus on maritime and technical education.</p>
+      
+        <div class="uni-images center">
+          <div class="campus" >
+            <img src="https://image.free-apply.com/gallery/l/uni/gallery/lg/1081800011/2d9570d85fbb5289ad40f99ae8c1a807a885b855.jpg?s=640" alt="Alexandria Campus">
+            <p>Main Campus – Alexandria (Miami)</p>
+            <a href="https://maps.app.goo.gl/VniHv9D6yziotuZj8" class="uni-link">View on Map</a>
+          </div>
+          <div class="campus" >
+            <img src="https://www.koleyat.com/wp-content/uploads/2017/11/Screen-Shot-2017-11-25-at-8.16.17-PM.jpg" alt="Heliopolis Campus">
+            <p>Heliopolis Campus – Cairo</p>
+            <a href="https://maps.app.goo.gl/8rWk7QA44Wwbdzb7A" class="uni-link">View on Map</a>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="uni-card active">
+        <h3 class="uni-name">AASTMT</h3>
+        <p class="uni-meta">Type: National • Cities: Alexandria, Cairo, Giza</p>
+        <p class="uni-fee">The Arab Academy for Science, Technology & Maritime Transport operates multiple campuses across Egypt with a strong focus on maritime and technical education.</p>
+      
+        <div class="uni-images center">
+  <div class="campus" style="width: 30%; height: 15%; text-align: center;">
+    <img src="https://aast.edu/mainpage-imgs/5/img/IMG-20230327-WA0016.jpg" alt="Port Said Campus">
+    <p>Port Said Campus</p>
+    <a href="https://maps.app.goo.gl/mqfnsCV78oDY3DW5A" class="uni-link">View on Map</a>
+  </div>
+
+  <div class="campus" style="width: 30%; height: 15%; text-align: center;">
+    <img src="https://kortext.com/kortext/wp-content/uploads/Arab-Academy.webp" alt="Aswan Campus">
+    <p>South Valley Campus - Aswan</p>
+    <a href="https://maps.app.goo.gl/pUYKR4tYkCoEMyWw9" class="uni-link">View on Map</a>
+  </div>
+
+  
+</div>
+</div>
+</div>
+
+
+<div class="uni-card active">
+    <h3 class="uni-name">AASTMT</h3>
+    <p class="uni-meta">Type: National • Cities: Alexandria, Cairo, Giza</p>
+    <p class="uni-fee">The Arab Academy for Science, Technology & Maritime Transport operates multiple campuses across Egypt with a strong focus on maritime and technical education.</p>
+  
+    <div class="uni-images" style="position: relative;">
+      <div class="campus" style="width: 30%; height: 15%; text-align: center;">
+        <img src="https://aast.edu/template/en/colleges-all/img/camp/smart.png" alt="Smart Village Campus" style="width: 100%;">
+        <p>Smart Village Campus - Giza</p>
+        <a href="https://maps.app.goo.gl/JNEgJ2PFr9PKWR4p7" class="uni-link">View on Map</a>
+      </div>
+      <div class="campus" style="width: 25%;  text-align: center;">
+        <img src="https://aast.edu/mainpage-imgs/501/img/117929049_212093480406369_6839115880869676115_n.jpg" alt="Beni Suef Campus" style="width: 100%;">
+        <p>South Valley Campus - Beni Suef</p>
+        <a href="https://maps.app.goo.gl/PzWL5KRrtkd5JFJh6" class="uni-link">View on Map</a>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<!--AZHAR-->
+
+<div class="uni-card active">
+    <h3 class="uni-name">Al-Azhar University</h3>
+    <p class="uni-meta">Type: National • Cities: Cairo, Assiut, Tanta, Qena, Mansoura, Alexandria, Zagazig, Shebin El-Kom</p>
+    <p class="uni-fee">Al-Azhar University has multiple campuses across Egypt, providing religious and academic education through a variety of branches nationwide.</p>
+  
+    <div class="uni-images center">
+      <div class="campus" style="width: 29%; text-align: center;">
+        <img src="https://smapse.com/storage/2018/10/converted/825_585_al-azhar-university.jpg" alt="Cairo Campus">
+        <p>Cairo (Main)</p>
+        <a href=" https://maps.app.goo.gl/nrpmBZFjWkSei7bc8" class="uni-link">View on Map</a>
+       
+      </div>
+      <div class="campus" style="width: 33%; text-align: center;">
+        <img src="https://uni24k.com/media/CACHE/images/unis/building_schools_uce274a12_5fbcb89c/e5b147e6f813f42b9f6829bf4fce665f.jpg" alt="Assiut Campus">
+        <p>Assiut</p>
+        <a href="https://maps.app.goo.gl/wWufpLY18KBEVXtu9" class="uni-link">View on Map</a>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="uni-card active">
+        <h3 class="uni-name">Al-Azhar University</h3>
+        <p class="uni-meta">Type: National • Cities: Cairo, Assiut, Tanta, Qena, Mansoura, Alexandria, Zagazig, Shebin El-Kom</p>
+        <p class="uni-fee">Al-Azhar University has multiple campuses across Egypt, providing religious and academic education through a variety of branches nationwide.</p>
+      
+        <div class="uni-images center" style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div class="campus" style="width: 25.5%; text-align: center;">
+            <img src="https://mediaim.expedia.com/destination/9/87b5e6f57a16b27714f2fbb0d3241cba.jpg" alt="Tanta Campus" style="width: 100%;">
+            <p>Tanta</p>
+            <a href="https://maps.app.goo.gl/8SovzuLUgJAhqntT6" class="uni-link">View on Map</a>
+          </div>
+          <div class="campus" style="width: 25%; text-align: center;">
+            <img src="https://www.studioarabiyainegypt.com/wp-content/uploads/2019/07/admissions.jpg" alt="Qena Campus" style="width: 100%;">
+            <p>Qena</p>
+            <a href="https://maps.app.goo.gl/b4CrXmqo6H4D82Ue8" class="uni-link">View on Map</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="uni-card active">
+        <h3 class="uni-name">Al-Azhar University</h3>
+        <p class="uni-meta">Type: National • Cities: Cairo, Assiut, Tanta, Qena, Mansoura, Alexandria, Zagazig, Shebin El-Kom</p>
+        <p class="uni-fee">Al-Azhar University has multiple campuses across Egypt, providing religious and academic education through a variety of branches nationwide.</p>
+      
+        <div class="uni-images center" style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div class="campus" style="width: 25%; text-align: center;">
+            <img src="https://smapse.com/storage/2018/10/converted/660_464_xxl-11.jpg" alt="Mansoura Campus" style="width: 100%;">
+            <p>Mansoura</p>
+            <a href="https://maps.app.goo.gl/qrRjN7uHkacREvzx9" class="uni-link">View on Map</a>
+          </div>
+          <div class="campus" style="width: 30%; text-align: center;">
+            <img src="https://beta.sis.gov.eg//media/239297/%D9%85%D9%83%D8%AA%D8%A8%D8%A9-%D8%A7%D9%84%D8%A7%D8%B2%D9%87%D8%B1.jpg" alt="Alexandria Campus" style="width: 100%;">
+            <p>Alexandria</p>
+            <a href="https://maps.app.goo.gl/XpF8UUEMsXvsoaWPA" class="uni-link">View on Map</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="uni-card active">
+        <h3 class="uni-name">Al-Azhar University</h3>
+        <p class="uni-meta">Type: National • Cities: Cairo, Assiut, Tanta, Qena, Mansoura, Alexandria, Zagazig, Shebin El-Kom</p>
+        <p class="uni-fee">Al-Azhar University has multiple campuses across Egypt, providing religious and academic education through a variety of branches nationwide.</p>
+      
+        <div class="uni-images center" style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <div class="campus" style="width: 35%; text-align: center;">
+            <img src="https://www.ehaf.com/storage/app/projects_gallery/full_size/al-azhar-library-egypt2.jpg" alt="Zagazig Campus" style="width: 100%;">
+            <p>Zagazig</p>
+            <a href="https://maps.app.goo.gl/ZuZbcWT338ii7uUu7" class="uni-link">View on Map</a>
+          </div>
+          <div class="campus" style="width: 30%; text-align: center;">
+            <img src="https://mediaim.expedia.com/destination/9/87b5e6f57a16b27714f2fbb0d3241cba.jpg" alt="Shebin El-Kom Campus" style="width: 100%;">
+            <p>Shebin El-Kom</p>
+            <a href="https://maps.app.goo.gl/HPkMc1g32pow4f7bA" class="uni-link">View on Map</a>
+          </div>
+        </div>
+      </div>
+      
+<div class="carousel-arrow right">&#8250;</div>
+</section>
+
+  
+  
+
+<!--branches-->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.uni-card');
+    const leftArrow = document.querySelector('.carousel-arrow.left');
+    const rightArrow = document.querySelector('.carousel-arrow.right');
+    let current = 0;
+  
+    function showCard(index) {
+      cards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+      });
+    }
+  
+    leftArrow.addEventListener('click', () => {
+      current = (current - 1 + cards.length) % cards.length;
+      showCard(current);
+    });
+  
+    rightArrow.addEventListener('click', () => {
+      current = (current + 1) % cards.length;
+      showCard(current);
+    });
+  
+    showCard(current);
+  });
+  
+
+</script>
+  
+  
+
+<!--wave-->
+    <section class="features-section">
+        <img src="images/top.png" class="wave wave-top"> 
+        <div class="top-banner1">Guiding your future because</div>
+        <div class="top-banner2"> your dream matters </div>
+        <img src="images/line.png" class="line">
+        <div class="content-wrapper">
+            <p class="description">We give you all of the data and insights in one place
+                <br> to make your search as easy as possible.</p>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://img.icons8.com/color/96/marker.png" alt="Location">
+                    <h3>LOCATION</h3>
+                    <p>Find the Perfect University Near You – Instantly!</p>
+                </div>
+                <div class="feature">
+                    <img src="https://img.icons8.com/color/96/money.png" alt="Price">
+                    <h3>PRICE</h3>
+                    <p>Discover top colleges that fit your budget!</p>
+                </div>
+                <div class="feature">
+                    <img src="https://img.icons8.com/color/96/student-male.png" alt="Major">
+                    <h3>MAJOR</h3>
+                    <p>You can make the right choice for your future career with us!</p>
+                </div>
+            </div>
+        </div>
+        <img src="images/bottom.png" class="wave wave-bottem"> 
+    </section>
+
+
+    <!--Recommendation-->
+    <section class="recommended-section">
+        <h2>✔ RECOMMENDED UNIVERSITIES FOR YOU</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left" onclick="prevUniversity()">&#60;</button>
+            <div class="university-card" id="university-card">
+                <img id="university-img" src="https://www.bestuniversitiesegypt.com/ImageHandler.ashx?Id=13196&SS=103459f4a489f3db55f5c1d0f33a225b" alt="Ain Shams University">
+                <div class="university-details">
+                    <h3 id="university-name">Ain-Shams University (ASU)</h3>
+                    <p id="university-description">Ain Shams University is considered among the universities that are present in all international classifications, 
+                      which makes it one of the best 3% of the world's universities.</p>
+                    <div class="buttons">
+                        <a id="university-website" href="#">Visit Website</a>
+                        <a id="university-info" href="#">More Information</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow right" onclick="nextUniversity()">&#62;</button>
+        </div>
+    </section>
+    
+    <script>
+        const universities = [
+            {
+                name: "Ain-Shams University (ASU)",
+                img: "https://scenenow.com/Content/Admin/Uploads/Articles/ArticlesMainPhoto/42796/36a16404-69c2-4ebd-b4ad-80245e29027d.jpg",
+                description: "Ain Shams University is considered among the universities that are present in all international classifications, making it one of the best 3% of the world’s universities.",
+                website: "https://www.asu.edu.eg/ar",
+                info: "https://en.wikipedia.org/wiki/Ain_Shams_University"
+            },
+            {
+                name: "Cairo University (CU)",
+                img: "https://english.ahram.org.eg/Media/News/2022/12/18/41_2022-638069760115348987-534.jpg",
+                description: "Cairo University is one of the top public universities in Egypt, offering a variety of faculties and world-class research facilities.",
+                website: "https://cu.edu.eg/Home",
+                info: "https://en.wikipedia.org/wiki/Cairo_University"
+            },
+            {
+                name: "Al-Azhar University",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6iVPRzPD7--YtvFWWhB3gt-BeBKmEV5k-w&s",
+                description: "Al-Azhar University is Egypt's oldest degree-granting university and is known as one of the most prestigious universities for Islamic learning.",
+                website: "https://www.universitiesegypt.com/faculties.aspx?EId=51&WID=55",
+                info: "https://en.wikipedia.org/wiki/Al-Azhar_University"
+            },
+            {
+                name: "Mansoura University",
+                img: "https://vetfac.mans.edu.eg/images/news/2023/mans.jpg",
+                description: "Mansoura University was founded in 1972 in Mansoura city, Egypt. It is in the middle of the Nile Delta.  It is one of the biggest Egyptian universities and has contributed much to the cultural and scientific life in Mansoura and Egypt.",
+                website: "https://www.mans.edu.eg/en",
+                info: "https://en.wikipedia.org/wiki/Mansoura_University"
+            }
+            ];
+    
+        let currentIndex = 0;
+    
+        function updateUniversityCard() {
+            document.getElementById("university-name").textContent = universities[currentIndex].name;
+            document.getElementById("university-img").src = universities[currentIndex].img;
+            document.getElementById("university-description").textContent = universities[currentIndex].description;
+            document.getElementById("university-website").href = universities[currentIndex].website;
+            document.getElementById("university-info").href = universities[currentIndex].info;
+        }
+    
+        function nextUniversity() {
+            currentIndex = (currentIndex + 1) % universities.length;
+            updateUniversityCard();
+        }
+    
+        function prevUniversity() {
+            currentIndex = (currentIndex - 1 + universities.length) % universities.length;
+            updateUniversityCard();
+        }
+    </script>
+
+     <footer>
+        <p>&copy; 2025 UniGuide. All rights reserved.</p>
+    </footer>
+
+   
+</body>
+</html>

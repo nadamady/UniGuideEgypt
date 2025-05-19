@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Universities in Egypt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="UniGuide Logo">
+        </div>
+        
+        <div class="search-container">
+          <div class="Search-box">
+          <input type="text" class="search-input" onkeyup="search()" placeholder="Search universities...">
+
+      </div>
+      </div>
+
+      <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="DcmD_3Weer-T73B2KO5S8";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+
+      <script>
+        function search() {
+            const input = document.querySelector('.search-input').value.toUpperCase();
+            const containers = document.querySelectorAll('.university-container');
+        
+            containers.forEach(container => {
+                const titleElement = container.querySelector('h2');
+                const title = titleElement ? titleElement.innerText.toUpperCase() : "";
+                
+                if (title.includes(input)) {
+                    container.style.display = "";
+                } else {
+                    container.style.display = "none";
+                }
+            });
+        }
+        </script>
+        
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="private.html">Private</a>
+            <a href="pages/National.html" class="active"> National</a>
+            <a href="State-Funded.html">State-Funded</a>
+            <a href="Top-Uni.html">Top Universities</a>
+        </div>
+    </nav>
+    <script>
+    const crypto = require('crypto');
+
+const secret = 'yoyc3phtoki20gxkntb6pifqtv16dg9p'; 
+const userId = current_user.id 
+
+const hash = crypto.createHmac('sha256', secret).update(userId).digest('hex');
+</script>
+
+
+     <!--search-->
+
+
+     <div class="full-bg">
+     <div class="filter-wrapper">
+      <div id="filters" class="filter-section">
+      <label for="cityFilter">Filter by City:</label>
+      <select id="cityFilter">
+        <option value="">All Cities</option>
+
+        <option value="el-sheikh-zayed">Sheikh Zayed</option>
+        <option value="6th-of-october-city">6th of October</option>
+
+        <option value="benha">Benha</option> 
+
+        <option value="suez">Suez</option> 
+
+        <option value="new-mansoura">New Mansoura</option>
+
+        <option value="alamein-city">Alamein City</option>
+        <option value="new-administrative-capital">New Administrative Capital</option>
+
+        <option value="south-sinai">Southth Sinai</option> 
+
+      </select>
+      
+      
+      <label for="facultyFilter">Filter by Faculty:</label>
+      <select id="facultyFilter">
+        <option value="">All Faculties</option>
+        <option value="engineering">Faculty of Engineering</option>
+        <option value="computer-science">Faculty of Computer Science</option>
+        <option value="arts-design">Faculty of Art and Design</option>
+        <option value="dentistry">Faculty of Dentistry</option>
+        <option value="design">Faculty of Design</option>
+        <option value="pharmacy">Faculty of Pharmacy</option>
+        <option value="nursing">Faculty of Nursing</option>
+        <option value="physical-therapy">Faculty of Physical Therapy</option>
+        <option value="medicine">Faculty of Medicine</option>
+        <option value="architecture">Faculty of Architecture</option>
+        <option value="informatics">Faculty of Computing and Informatics</option>
+        <option value="language-studies">Faculty of Language Studies</option>
+        <option value="medical-science">Faculty of Medical Science</option>
+        <option value="education">Faculty of Education</option>
+        <option value="tourism">Faculty of Tourism and Hospitality</option>
+        <option value="veterinary-medicine">Faculty of Veterinary Medicine</option>
+        <option value="sciences">Faculty of Basic Sciences</option>
+        <option value="energy">Faculty of Energy, Environment and Space</option>
+        <option value="energy-engineering">Faculty of Energy Engineering</option>
+        <option value="virtual-edu">Faculty of Virtual Education</option>
+        <option value="administration">Faculty of Business and Administration</option>
+        <option value="imaging">Faculty of Imaging and Visualization</option>
+        <option value="nanoscience">Faculty of Nanoscience and Informatics</option>
+        <option value="sciences-and-arts">Faculty of Sciences and Arts</option>
+        <option value="administrative-science">Faculty of Administrative Science</option>
+        <option value="desert-agriculture">Faculty of Desert Agriculture</option>
+        <option value="transactions">Faculty of Transactions</option>
+        <option value="humanities-social-science">Faculty of Humanities Social Science</option>
+        <option value="comp-engineering">Faculty of Computer Engineering</option>
+        <option value="textile-science">Faculty of Textile Science</option>
+        <option value="textile-engineering">Faculty of Textile Engineering</option>
+        <option value="biotechnology">Faculty of Biotechnology</option>
+        <option value="public-health">Faculty of Public Health</option>
+      </select>
+      </div>
+      </div>
+      </div>
+
+
+      
+
+
+    <script>
+      const cityFilter = document.getElementById('cityFilter');
+      const facultyFilter = document.getElementById('facultyFilter');
+    
+      function applyFilters() {
+        const selectedCity = cityFilter.value.toLowerCase();
+        const selectedFaculty = facultyFilter.value.toLowerCase();
+    
+        document.querySelectorAll('.university-container').forEach(container => {
+          const city = container.dataset.city;
+          const faculties = container.dataset.faculties.split(',');
+    
+          const cityMatch = !selectedCity || city === selectedCity;
+          const facultyMatch = !selectedFaculty || faculties.includes(selectedFaculty);
+    
+          if (cityMatch && facultyMatch) {
+            container.style.display = '';
+          } else {
+            container.style.display = 'none';
+          }
+        });
+      }
+    
+      cityFilter.addEventListener('change', applyFilters);
+      facultyFilter.addEventListener('change', applyFilters);
+    </script>
+
+    <!--unis-->
+
+
+    <div class="main-container">
+        
+      <div class="university-container" data-city="6th-of-october-city" data-faculties="virtual-edu,energy,science,imaging,nanoscience,medical ">
+            <img src="https://www.bestuniversitiesegypt.com/ImageHandler.ashx?Id=14620&SS=075ce147b12ba2ade72e94f599bcf9e6" alt="Zewail City of Science, Technology and Innovation" class="university-image">
+            <div class="university-content">
+                <h2>Zewail City of Science, Technology and Innovation</h2>
+                <p>Zewail City of Science, Technology and Innovation is a nonprofit, independent institution of learning, research and innovation. It's named after its founder the late Dr. Ahmed Zewail, the Nobel laureate in chemistry 1999. After numerous delays,
+                     the project was revived by the Egyptian cabinet's decree on May 11, 2011 following the January 25 Revolution.</p>
+
+                     <div class="uni-faq-container" id="sha-faq-section">
+                        <h3 class="uni-faq-title">How are tuition fees calculated?</h3>
+                        <ul class="uni-faq-list">
+                          <li>Tuition fee is calculated based on the number of registered credit hours. The tuition of each credit hour for academic year 2024/2025:</li>
+                          <li>3,740 EGP (Three Thousand and Four Hundred Egyptian Pounds) for Egyptian students.</li>
+                          <li>350 USD (Three Hundred and Fifty Dollars) for non-Egyptian students.</li>
+                        </ul>
+                      
+                        <h4 class="uni-faq-note-heading">Note</h4>
+                        <p class="uni-faq-note">
+                            There will be a limited number of fellowships/financial support from the research centers at Zewail City that will be available to the top applicants based on their credentials. The financial aid form will be sent to the applied applicants.
+                        </p>
+                      </div>
+
+                     <title>FAQ Section</title>
+                    <div class="faq-section">
+                        <div class="accordion-item" onclick="toggleAccordion(this)">
+                          <div class="accordion">In awarding financial support, the financial support committee considers:<span class="chevron">⌄</span></div>
+                          <div class="content">
+                            <ul>
+                                <li>1. The student's individual/family circumstances.</li>
+                                <li>2. The number of submitted applications for financial support.</li>
+                                <li>3. The university resources.</li>
+                                <li>4. the student's academic background.</li>
+                                
+                              </ul>
+                          </div>
+                        </div>
+                    
+                        <div class="accordion-item" onclick="toggleAccordion(this)">
+                          <div class="accordion">Payment <span class="chevron">⌄</span></div>
+                          <div class="content">
+                            <li>The student can pay the tuition fees in four installments.</li>
+                            <li>After the final acceptance of joining the University of Science and Technology in Zewail City, the student has to pay a non-refundable deposit of 1,000 USD (One Thousand United States Dollar) for Non-Egyptian students.</li>
+                            <li> After the final acceptance of joining the University of Science and Technology in Zewail City, the student has to pay a non-refundable deposit of 15,000 EGP (Fifteen Thousand Egyptian Pounds) for Egyptian students.</li>
+                          </div>
+                        </div>
+                    
+                        <div class="accordion-item" onclick="toggleAccordion(this)">
+                          <div class="accordion">Methods of Payment <span class="chevron">⌄</span></div>
+                          <div class="content">
+                            <li>hrough Fawry for Egyptian students.</li>
+                               <li> CIB Bank for Non-Egyptian students.</li>
+                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item" onclick="toggleAccordion(this)">
+                        <div class="accordion">Minimum Admission Scores - Zewail City (2025) <span class="chevron">⌄</span></div>
+                        <div class="content">
+                          <div class="research-section">
+                            <p><strong>Thanawya Amma & STEM Students:</strong></p>
+                            <ul>
+                              <li>Minimum score: Based on annual announcements</li>
+                              <li>Must pass Zewail City Admission Exam</li>
+                              <li>English Proficiency required:
+                                <ul>
+                                  <li>UST English Placement Test (EPT)</li>
+                                  <li>TOEFL iBT: ≥ 94</li>
+                                  <li>IELTS Academic: ≥ 7</li>
+                                  <li>Pearson PTE Academic: ≥ 64</li>
+                                </ul>
+                              </li>
+                            </ul>
+                      
+                            <p><strong>International Certificates:</strong></p>
+                            <ul>
+                              <li><strong>American Diploma:</strong>
+                                <ul>
+                                  <li>SAT I: ≥ 1050/1600</li>
+                                  <li>SAT II: ≥ 1100/1600 (≥ 500 in each subject)</li>
+                                </ul>
+                              </li>
+                              <li><strong>IGCSE/GCSE:</strong>
+                                <ul>
+                                  <li>8 subjects including core sciences</li>
+                                  <li>Min grade: C (O-Level), D (AS/A-Level)</li>
+                                  <li>Subjects must be from extended system</li>
+                                </ul>
+                              </li>
+                              <li><strong>French Baccalaureate:</strong>
+                                <ul>
+                                  <li>Overall score ≥ 10/20</li>
+                                  <li>Must include core sciences</li>
+                                </ul>
+                              </li>
+                              <li><strong>German Abitur:</strong>
+                                <ul>
+                                  <li>7 subjects including core sciences</li>
+                                </ul>
+                              </li>
+                              <li><strong>Canadian Diploma:</strong>
+                                <ul>
+                                  <li>8 subjects including core sciences</li>
+                                  <li>Subjects from Grade 11 (max 3) & Grade 12 (min 5)</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <script>
+                        function toggleAccordion(item) {
+                          item.classList.toggle('active');
+                        }
+                      </script>
+                      <div class="accordion-item" onclick="toggleAccordion(this)">
+                        <div class="accordion">Research Institutes at Zewail City <span class="chevron">⌄</span></div>
+                        <div class="content">
+                          <div class="research-section">
+                            <p>Zewail City hosts several cutting-edge research institutes and specialized centers:</p>
+                      
+                            <ul>
+                              <li><strong>Helmy Institutes for Medical Sciences (HIMS)</strong>
+                                <ul>
+                                  <li>Center for Aging and Associated Diseases (CAAD)</li>
+                                  <li>Center of Excellence for Stem Cells Research and Regenerative Medicine (CESC)</li>
+                                  <li>Center for Genomics (CG)</li>
+                                </ul>
+                              </li>
+                              <li><strong>NBE Institute for Nanoscience and Informatics (INI)</strong>
+                                <ul>
+                                  <li>Center for Nanotechnology (CNT)</li>
+                                  <li>Center for Nanoelectronics and Devices</li>
+                                  <li>Center for Materials Science</li>
+                                </ul>
+                              </li>
+                              <li><strong>Institute for Imaging and Visualization (IIV)</strong>
+                                <ul>
+                                  <li>Center for Imaging and Microscopy</li>
+                                  <li>Center for X-Ray Determination of the Structure of Matter</li>
+                                </ul>
+                              </li>
+                              <li><strong>Institute for Basic Sciences (IBS)</strong>
+                                <ul>
+                                  <li>Center for Fundamental Physics (CFP)</li>
+                                </ul>
+                              </li>
+                              <li><strong>Institute for Energy, Environment and Space (IEES)</strong>
+                                <ul>
+                                  <li>Center for Photonics and Smart Materials (CPSM)</li>
+                                </ul>
+                              </li>
+                              <li><strong>Institute for nomics and Global Affairs (IEGA)</strong>
+                                <ul>
+                                  <li>Talaat Harb Center for Economics and Development (THC)</li>
+                                </ul>
+                              </li>
+                              <li><strong>Institute for Virtual Education (IVE)</strong>
+                                <ul>
+                                  <li>Center for Learning Technologies (CLT)</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                      
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/gaGmqaNwqs746Q6T7" target="_blank">View Location</a>
+                    <a href="https://zewailcity.edu.eg/" target="_blank">Visit Website</a>
+
+                </div>
+            </div>
+      </div>
+        <!--galala-->
+        
+      <div class="university-container" data-city="suez"  data-faculties="arts-design,science,computer-science,engineering,health-sciences-tech,dentistry,medicine,nursing,pharmacy,physical-therapy,media,administrative-science">
+            <img src="https://oktamam.com/wp-content/uploads/2024/02/3-3-2023_18_07_06_GomhuriaOnline_561677859626.jpg" alt="Galala University" class="university-image">
+            <div class="university-content">
+                <h2>Galala University</h2>
+                <p>Galala University is a national, non-profit Egyptian university located in Al Galala in Suez.
+                     The university comprises 13 faculties covering various academic disciplines and was established by a presidential decree in August 2020.</p>
+
+                     <div class="uni-faq-container" id="galala-faq-section">
+                        <h3 class="uni-faq-title">Tuition Fees Disclaimer</h3>
+                        <p class="uni-faq-note">
+                          The tuition fees listed are based on the previous academic year (2024/2025) and are subject to change. 
+                          Updated fees for the 2025/2026 academic year will be announced soon. 
+                          Applicants are encouraged to check back regularly for the latest updates.
+                        </p>
+                      
+                        <h3 class="uni-faq-title">Refund Policy</h3>
+                        <ul class="uni-faq-list">
+                          <li><strong>Before the start of classes:</strong> Full refund with 10% deduction of the semester tuition fees for new students, plus full deduction of the admission administrative fees.</li>
+                          <li><strong>During the first and second week of classes:</strong> Full refund with 50% deduction of the semester tuition fees for new students, plus full deduction of the admission administrative fees.</li>
+                          <li><strong>Starting from the third week of classes:</strong> No refund is allowed.</li>
+                        </ul>
+                      
+                        <h4 class="uni-faq-note-heading">Note:</h4>
+                        <p class="uni-faq-note">
+                          No other fees are subject to refund.
+                        </p>
+                      </div>
+                      
+                     <button class="uni-tuition-toggle-btn" onclick="toggleNewTuition(this)">Show Tuition Fees</button>
+                     <div class="uni-tuition-container" id="new-tuition-section" style="display: none;">
+                        <h3 class="uni-tuition-title">Tuition Fees by Program</h3>
+                        <table class="uni-tuition-table">
+                <thead>
+                  <tr>
+                    <th>Program</th>
+                    <th>Annual First Year Fees (EGP)</th>
+                    <th>Total First Semester Fees (EGP)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Art and Design (Graphic Design, Interior Design, Fashion Design, Animation Movies, Visual Art, Music)</td>
+                    <td>EGP 40,480</td>
+                    <td>EGP 24,500</td>
+                  </tr>
+                  <tr>
+                    <td>Basic Sciences (Molecular Biotechnology, Petroleum &amp; Mining Geology, Nano science &amp; Technology)</td>
+                    <td>EGP 63,960</td>
+                    <td>EGP 39,960</td>
+                  </tr>
+                  <tr>
+                    <td>Computer Science (Biomedical Informatics, Computer Science, Artificial Intelligence Science)</td>
+                    <td>EGP 87,380</td>
+                    <td>EGP 52,880</td>
+                  </tr>
+                  <tr>
+                    <td>Engineering (Architectural Design &amp; Digital Architecture, Mechatronics &amp; Industrial Automation, Construction Engineering &amp; Specialized Construction, Material &amp; Manufacturing Engineering, Computer Engineering, Artificial Intelligence Engineering)</td>
+                    <td>EGP 93,500</td>
+                    <td>EGP 56,000</td>
+                  </tr>
+                  <tr>
+                    <td>Applied Health Sciences Technology (Radiology &amp; Medical Imaging, Prosthetic &amp; Orthotic Devices, Medical Laboratory, Prosthetic Dentistry, Anesthesia and Intensive Care, Respiratory Therapy, Occupational Therapy)</td>
+                    <td>EGP 56,840</td>
+                    <td>EGP 35,840</td>
+                  </tr>
+                  <tr>
+                    <td>Dentistry</td>
+                    <td>EGP 162,800</td>
+                    <td>EGP 92,800</td>
+                  </tr>
+                  <tr>
+                    <td>Medicine</td>
+                    <td>EGP 173,000</td>
+                    <td>EGP 98,000</td>
+                  </tr>
+                  <tr>
+                    <td>Nursing</td>
+                    <td>EGP 54,800</td>
+                    <td>EGP 34,800</td>
+                  </tr>
+                  <tr>
+                    <td>Pharmacy</td>
+                    <td>EGP 121,000</td>
+                    <td>EGP 71,000</td>
+                  </tr>
+                  <tr>
+                    <td>Physical Therapy</td>
+                    <td>EGP 120,000</td>
+                    <td>EGP 70,000</td>
+                  </tr>
+                  <tr>
+                    <td>Administrative Sciences (Logistics &amp; Supply Chain Management, Economics &amp; Political Sciences, Business Information Systems, Fintech)</td>
+                    <td>EGP 60,920</td>
+                    <td>EGP 37,920</td>
+                  </tr>
+                  <tr>
+                    <td>Media Production (Television Production, Advertising Production)</td>
+                    <td>EGP 65,000</td>
+                    <td>EGP 40,000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="uni-faq-note">
+                <strong>Note:</strong> These fees are approximate and may vary. For accurate and up-to-date information, please refer to the official website or contact the student affairs office.
+              </p>
+            </div>
+            <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">Minimum Admission Scores (2025) <span class="chevron">⌄</span></div>
+                <div class="content">
+                  <div class="research-section">
+                    <p><strong>Thanawya Amma Students:</strong></p>
+                    <ul>
+                      <li>Science Section: 90%</li>
+                      <li>Mathematics Section: 88%</li>
+                      <li>Arts Section: 82%</li>
+                    </ul>
+              
+                    <p><strong>International Certificates:</strong></p>
+                    <ul>
+                      <li><strong>American Diploma:</strong> SAT I ≥ 800/1600, ACT ≥ 14</li>
+                      <li><strong>IGCSE:</strong> 8 subjects, min grade C (O-Level), D (AS/A-Level)</li>
+                      <li><strong>French Baccalaureate:</strong> Overall score ≥ 10/20</li>
+                      <li><strong>German Abitur:</strong> 7 subjects including core sciences</li>
+                      <li><strong>Canadian Diploma:</strong> 8 subjects including Chemistry, Physics, Math, and English</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+
+            <script>
+              function toggleNewTuition(button) {
+                const section = document.getElementById('new-tuition-section');
+                const isHidden = section.style.display === 'none' || section.style.display === '';
+                section.style.display = isHidden ? 'block' : 'none';
+                button.textContent = isHidden ? 'Hide Tuition Fees' : 'Show Tuition Fees';
+              }
+            </script>
+            <script>
+                function toggleAccordion(item) {
+                  item.classList.toggle('active');
+                }
+              </script>  
+
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/P67Lxz4xBgqL6TdB7" target="_blank">View Location</a>
+                    <a href="https://www.gu.edu.eg/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+      </div>
+
+
+        <!--king salman-->
+
+      <div class="university-container" data-city="south-sinai" data-faculties="computer-science,nursing,veterinary-medicine,science,comp-engineering,desert-agriculture,arts-design,engineering,architecture,administrative-science,tourism,language-studies,physical-therapy">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDvbtebpTrK679hTFF8ds4WPkdcVMmPc9sxA&s" alt="King Salman International University" class="university-image">
+            <div class="university-content">
+              <h2>King Salman International University</h2>
+              <p>
+                King Salman International University is a national (Ahleya), non-profit Egyptian university located in Sinai across three campuses in Ras Sedr, El Tor and Sharm El Sheikh. 
+                The university includes 13 faculties in different fields of study. It was established in August 2020 by a decision of Abdel Fattah El-Sisi, President of Egypt, and was named after Salman of Saudi Arabia.
+              </p>
+
+
+              <div class="uni-faq-container" id="application-process">
+                <h3 class="uni-faq-title">Application Process Summary</h3>
+                <ul class="uni-faq-list">
+                  <li>Applications are submitted online through the official application webpage.</li>
+                  <li>Students choose their desired academic field/program and fill out personal and academic details.</li>
+                  <li>Upload documents to verify submitted information. A non-refundable application fee of 1,600 EGP is required.</li>
+                  <li>Technical diploma holders may apply for certain fields (e.g., Engineering, Tourism, Admin Sciences).</li>
+                  <li>If initially accepted, students will receive an email and must visit campus with original documents.</li>
+                  <li>Students must pay 50% of tuition + service & medical exam fees within 2 days of acceptance.</li>
+                  <li>Final acceptance is conditional upon medical exam and personal interview.</li>
+                  <li>Students cannot be enrolled in multiple universities; prior enrollment must be canceled first.</li>
+                  <li>Registration cancellation before the academic year allows a refund minus 10% of paid fees.</li>
+                  <li>Support is available via hotline or on-campus assistance if students cannot apply online.</li>
+                </ul>
+              </div>
+              
+          
+              <button class="uni-tuition-toggle-btn" onclick="toggleNewTuition(this)">Show Tuition Fees</button>
+          
+              <div class="uni-tuition-container" id="ksiu-tuition-section" style="display: none;">
+                <h3 class="uni-tuition-title">Tuition Fees for New Students (2024–2025)</h3>
+                <table class="uni-tuition-table">
+                  <thead>
+                    <tr>
+                      <th>Field</th>
+                      <th>Annual Tuition (EGP)</th>
+                      <th>Annual Tuition (USD) for Non-Egyptian Students</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Medicine</td><td>138,600 EGP</td><td>8,000 USD</td></tr>
+                    <tr><td>Dentistry</td><td>128,100 EGP</td><td>7,500 USD</td></tr>
+                    <tr><td>Pharmacy</td><td>112,200 EGP</td><td>6,500 USD</td></tr>
+                    <tr><td>Veterinary Medicine</td><td>79,200 EGP</td><td>4,000 USD</td></tr>
+                    <tr><td>Nursing</td><td>37,200 EGP</td><td>3,000 USD</td></tr>
+                    <tr><td>Basic Sciences</td><td>52,800 EGP</td><td>4,000 USD</td></tr>
+                    <tr><td>Computer Science</td><td>75,900 EGP</td><td>5,500 USD</td></tr>
+                    <tr><td>Computer Engineering</td><td>75,900 EGP</td><td>5,500 USD</td></tr>
+                    <tr><td>Desert Agriculture</td><td>47,300 EGP</td><td>3,000 USD</td></tr>
+                    <tr><td>Art and Design</td><td>53,900 EGP</td><td>3,000 USD</td></tr>
+                    <tr><td>Technological Industries</td><td>42,900 EGP</td><td>3,000 USD</td></tr>
+                    <tr><td>Engineering</td><td>75,900 EGP</td><td>5,500 USD</td></tr>
+                    <tr><td>Architecture</td><td>75,900 EGP</td><td>5,500 USD</td></tr>
+                    <tr><td>Administrative Sciences</td><td>50,600 EGP</td><td>4,000 USD</td></tr>
+                    <tr><td>Tourism and Hospitality</td><td>44,000 EGP</td><td>3,000 USD</td></tr>
+                    <tr><td>Al-Alsun and Applied Languages</td><td>47,000 EGP</td><td>3,000 USD</td></tr>
+                    <tr><td>Physical Therapy</td><td>85,000 EGP</td><td>6,000 USD</td></tr>
+                  </tbody>
+                </table>
+          
+                <p class="uni-faq-note">
+                  <strong>Note:</strong> These fees are for the 2024–2025 academic year and are subject to change. Please refer to the official website for the most accurate and updated information.
+                </p>
+                  
+              </div>
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">Minimum Admission Scores <span class="chevron">⌄</span></div>
+                <div class="content">
+                  <div class="research-section">
+                    <p><strong>Thanawya Amma & STEM Students:</strong></p>
+                    <ul>
+                      <li>Field of Medicine: 75%</li>
+                      <li>Field of Dentistry: 74%</li>
+                      <li>Field of Pharmacy: 70%</li>
+                      <li>Field of Veterinary Medicine: 66%</li>
+                      <li>Field of Nursing: 53%</li>
+                      <li>Field of Basic Sciences: 53%</li>
+                      <li>Field of Computer Science: 60%</li>
+                      <li>Field of Computer Engineering: 65%</li>
+                      <li>Field of Desert Agriculture: 53%</li>
+                      <li>Field of Art and Design: 53%</li>
+                      <li>Field of Technological Industries: 53%</li>
+                      <li>Field of Engineering: 65%</li>
+                      <li>Field of Architecture: 65%</li>
+                      <li>Field of Administrative Sciences: 53%</li>
+                      <li>Field of Tourism and Hospitality: 53%</li>
+                      <li>Field of al-Alsun and Applied Languages: 53%</li>
+                    </ul>
+              
+                    <p><strong>Arabic, Foreign & Al-Azhar Equivalent Certificates:</strong></p>
+                    <ul>
+                      <li>Field of Medicine: 83%</li>
+                      <li>Field of Dentistry: 78%</li>
+                      <li>Field of Pharmacy: 68%</li>
+                      <li>Field of Veterinary Medicine: 58%</li>
+                      <li>Field of Nursing: 58%</li>
+                      <li>Field of Basic Sciences: 58%</li>
+                      <li>Field of Computer Science: 60%</li>
+                      <li>Field of Computer Engineering: 65%</li>
+                      <li>Field of Desert Agriculture: 58%</li>
+                      <li>Field of Art and Design: 58%</li>
+                      <li>Field of Technological Industries: 58%</li>
+                      <li>Field of Engineering: 65%</li>
+                      <li>Field of Architecture: 65%</li>
+                      <li>Field of Administrative Sciences: 58%</li>
+                      <li>Field of Tourism and Hospitality: 58%</li>
+                      <li>Field of al-Alsun and Applied Languages: 58%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <a href="https://maps.app.goo.gl/X2kDJny1ADyk4GnGA" target="_blank">View Location</a>
+                <a href="https://ksiu.edu.eg/ target="_blank>Visit Website</a>
+              
+            </div>
+      </div>
+          
+          <script>
+            function toggleNewTuition(button) {
+              const section = button.nextElementSibling;
+              const isHidden = section.style.display === 'none' || section.style.display === '';
+              section.style.display = isHidden ? 'block' : 'none';
+              button.textContent = isHidden ? 'Hide Tuition Fees' : 'Show Tuition Fees';
+            }
+          </script>
+ 
+ <script>
+    function toggleAccordion(item) {
+      item.classList.toggle('active');
+    }
+  </script>       
+
+
+</div>
+
+          <!--new mansoura-->
+      
+        <div class="university-container" data-city="new-mansoura" data-faculties="business,engineering,computer-science,comp-engineering,science,transactions,textile-science,textile-engineering,medicine,dentistry,pharmacy,nursing,health-sciences-tech,humanities-social-science">
+            <img src="https://beta-technical.com/beta2018/wp-content/uploads/2021/10/Engineering.jpg" alt="New Mansoura University" class="university-image">
+            <div class="university-content">
+                <h2>New Mansoura University</h2>
+                <p>New Mansoura University is a national, non-profit Egyptian university located in New Mansoura in Dakahlia.
+                     The university includes 8 faculties in different fields of study. It was established by presidential decree in August 2020. It started accepting students in 2021.</p>
+
+                     <div class="uni-faq-container" id="application-process">
+                        <h3 class="uni-faq-title"></h3>
+                      
+                        <h4 class="uni-faq-note-heading">Please note that there will be more additional fees:</h4>
+                        <ul class="uni-faq-list">
+                          <li>Administration fee</li>
+                          <li>Medical examination fee</li>
+                          <li>Military Education Fee</li>
+                          <li>Lab insurance fees, which are refunded upon graduation</li>
+                        </ul>
+                    </div>                      
+
+                     <button class="uni-tuition-toggle-btn" onclick="toggleNewTuition(this)">Show Tuition Fees</button>
+
+                     <div class="uni-tuition-container" style="display: none;">
+                       <h3 class="uni-tuition-title">First: Tuition Fees for New Students Enrolled in the Academic Year 2024–2025</h3>
+                       <table class="uni-tuition-table">
+                         <thead>
+                           <tr>
+                             <th>Faculty / Program</th>
+                             <th>Tuition Fees (EGP)</th>
+                             <th>Tuition Fees (USD) – International Students</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr><td>Faculty of Business</td><td>46,000 EGP</td><td>4,000 USD</td></tr>
+                           <tr><td>Faculty of International Legal Transactions</td><td>46,000 EGP</td><td>4,000 USD</td></tr>
+                           <tr><td>Program of Textile Science</td><td>60,000 EGP</td><td>5,000 USD</td></tr>
+                           <tr><td>Program of Textile Engineering</td><td>60,000 EGP</td><td>6,000 USD</td></tr>
+                           <tr><td>Faculty of Engineering</td><td>70,000 EGP</td><td>7,000 USD</td></tr>
+                           <tr><td>Program of Computer Science</td><td>70,000 EGP</td><td>6,000 USD</td></tr>
+                           <tr><td>Program of Computer Engineering</td><td>70,000 EGP</td><td>7,000 USD</td></tr>
+                           <tr><td>Faculty of Science</td><td>50,000 EGP</td><td>5,000 USD</td></tr>
+                           <tr><td>Faculty of Medicine</td><td>130,000 EGP</td><td>10,000 USD</td></tr>
+                           <tr><td>Faculty of Dentistry</td><td>120,000 EGP</td><td>9,000 USD</td></tr>
+                           <tr><td>Faculty of Pharmacy</td><td>90,000 EGP</td><td>8,000 USD</td></tr>
+                           <tr><td>Faculty of Nursing</td><td>40,000 EGP</td><td>3,500 USD</td></tr>
+                           <tr><td>Faculty of Applied Health Sciences Technology</td><td>50,000 EGP</td><td>4,000 USD</td></tr>
+                           <tr><td>Faculty of Social and Human Sciences</td><td>46,000 EGP</td><td>4,000 USD</td></tr>
+                           <tr><td>Faculty of Mass Media and Communication</td><td>50,000 EGP</td><td>4,000 USD</td></tr>
+                         </tbody>
+                       </table>
+                     
+                       <h3 class="uni-tuition-title">Second: Tuition Fees for Other Students</h3>
+                       <table class="uni-tuition-table">
+                         <thead>
+                           <tr>
+                             <th>Faculty / Program</th>
+                             <th>Tuition Fees (EGP)</th>
+                             <th>Tuition Fees (USD) – International Students</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr><td>Faculty of Business</td><td>46,000 EGP</td><td>4,000 USD</td></tr>
+                           <tr><td>Faculty of International Legal Transactions</td><td>46,000 EGP</td><td>4,000 USD</td></tr>
+                           <tr><td>Program of Textile Science</td><td>58,000 EGP</td><td>5,000 USD</td></tr>
+                           <tr><td>Program of Textile Engineering</td><td>58,000 EGP</td><td>6,000 USD</td></tr>
+                           <tr><td>Faculty of Engineering</td><td>69,000 EGP</td><td>7,000 USD</td></tr>
+                           <tr><td>Program of Computer Science</td><td>69,000 EGP</td><td>6,000 USD</td></tr>
+                           <tr><td>Program of Computer Engineering</td><td>69,000 EGP</td><td>7,000 USD</td></tr>
+                           <tr><td>Faculty of Science</td><td>48,000 EGP</td><td>5,000 USD</td></tr>
+                           <tr><td>Faculty of Medicine</td><td>105,000 EGP</td><td>10,000 USD</td></tr>
+                           <tr><td>Faculty of Dental Medicine</td><td>97,000 EGP</td><td>9,000 USD</td></tr>
+                           <tr><td>Faculty of Pharmacy</td><td>85,000 EGP</td><td>8,000 USD</td></tr>
+                           <tr><td>Faculty of Nursing</td><td>31,000 EGP</td><td>3,500 USD</td></tr>
+                           <tr><td>Faculty of Applied Health Sciences Technology</td><td>39,000 EGP</td><td>4,000 USD</td></tr>
+                         </tbody>
+                       </table>
+                     
+                       <p class="uni-faq-note">
+                         <strong>Note:</strong> Fees are for the 2024-2025 academic year and are subject to change. Please confirm with the university for official updates.
+                       </p>
+                     </div>
+
+                     <div class="accordion-item" onclick="toggleAccordion(this)">
+                        <div class="accordion">Minimum Admission Limits - High School Certificate <span class="chevron">⌄</span></div>
+                        <div class="content">
+                          <div class="research-section">
+                            <table class="uni-tuition-table">
+                              <thead>
+                                <tr>
+                                  <th>Faculty</th>
+                                  <th>Minimum Percentage (%)</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr><td>Medicine</td><td>87.90%</td></tr>
+                                <tr><td>Dentistry</td><td>84.50%</td></tr>
+                                <tr><td>Engineering</td><td>68.00%</td></tr>
+                                <tr><td>Computer Engineering</td><td>68.00%</td></tr>
+                                <tr><td>Computer Science</td><td>64.00%</td></tr>
+                                <tr><td>Science</td><td>55.00%</td></tr>
+                                <tr><td>Law</td><td>53.00%</td></tr>
+                                <tr><td>Nursing</td><td>62.10%</td></tr>
+                                <tr><td>Business</td><td>53.00%</td></tr>
+                                <tr><td>Applied Health Sciences Technology</td><td>55.00%</td></tr>
+                                <tr><td>Pharmacy</td><td>76.00%</td></tr>
+                                <tr><td>Mass Media & Communication</td><td>53.00%</td></tr>
+                                <tr><td>Social & Human Sciences</td><td>53.00%</td></tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item" onclick="toggleAccordion(this)">
+                        <div class="accordion">Minimum Admission Limits by Country <span class="chevron">⌄</span></div>
+                        <div class="content">
+                          <div class="research-section">
+                            <table class="uni-tuition-table">
+                              <thead>
+                                <tr>
+                                  <th>Faculty</th>
+                                  <th>Country</th>
+                                  <th>Minimum Percentage (%)</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr><td>Medicine</td><td>Qatar</td><td>99.19%</td></tr>
+                                <tr><td>Medicine</td><td>Kuwait</td><td>99.83%</td></tr>
+                                <tr><td>Medicine</td><td>UAE</td><td>99.51%</td></tr>
+                                <tr><td>Medicine</td><td>Saudi Arabia</td><td>99.51%</td></tr>
+                                <tr><td>Medicine</td><td>Oman</td><td>98.70%</td></tr>
+                                <tr><td>Medicine</td><td>Bahrain</td><td>98.73%</td></tr>
+                      
+                                <tr><td>Dentistry</td><td>Kuwait</td><td>97.56%</td></tr>
+                                <tr><td>Dentistry</td><td>UAE</td><td>97.56%</td></tr>
+                                <tr><td>Dentistry</td><td>Saudi Arabia</td><td>98.78%</td></tr>
+                                <tr><td>Dentistry</td><td>Qatar</td><td>95.12%</td></tr>
+                                <tr><td>Dentistry</td><td>Oman</td><td>93.90%</td></tr>
+                                <tr><td>Dentistry</td><td>Bahrain</td><td>97.80%</td></tr>
+                      
+                                <tr><td>Engineering</td><td>All Countries</td><td>70.00%</td></tr>
+                                <tr><td>Computer Engineering</td><td>All Countries</td><td>70.00%</td></tr>
+                                <tr><td>Computer Science</td><td>All Countries</td><td>70.00%</td></tr>
+                      
+                                <tr><td>Science</td><td>All Countries</td><td>58.00%</td></tr>
+                                <tr><td>Law</td><td>All Countries</td><td>58.00%</td></tr>
+                                <tr><td>Nursing</td><td>All Countries</td><td>58.00%</td></tr>
+                                <tr><td>Business</td><td>All Countries</td><td>58.00%</td></tr>
+                                <tr><td>Applied Health Sciences Technology</td><td>All Countries</td><td>58.00%</td></tr>
+                      
+                                <tr><td>Pharmacy</td><td>Kuwait</td><td>80.00%</td></tr>
+                                <tr><td>Pharmacy</td><td>UAE</td><td>83.32%</td></tr>
+                                <tr><td>Pharmacy</td><td>Saudi Arabia</td><td>82.11%</td></tr>
+                                <tr><td>Pharmacy</td><td>Qatar</td><td>75.14%</td></tr>
+                                <tr><td>Pharmacy</td><td>Oman</td><td>87.00%</td></tr>
+                                <tr><td>Pharmacy</td><td>Bahrain</td><td>91.20%</td></tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      
+                     <script>
+                        function toggleNewTuition(button) {
+                          const section = button.nextElementSibling;
+                          const isHidden = section.style.display === 'none' || section.style.display === '';
+                          section.style.display = isHidden ? 'block' : 'none';
+                          button.textContent = isHidden ? 'Hide Tuition Fees' : 'Show Tuition Fees';
+                        }
+                      </script>
+                      
+                     
+                <div class="buttons">
+                    <a href="https://maps.app.goo.gl/weFh9quE2GHaW98v7" target="_blank">View Location</a>
+                    <a href="https://www.nmu.edu.eg/" target="_blank">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+        <!--alamein uni-->
+        
+        <div class="university-container" data-city="alamein-city" data-faculties="science,comp-engineering,computer-science,arts-design,dentistry,pharmacy,physical-therapy,public-health,medicine">
+            <img src="https://aiu.edu.eg/wp-content/uploads/2020/11/conference-hall.png" alt="Alamein International University" class="university-image">
+            
+            <div class="university-content">
+              <h2>Alamein International University</h2>
+              <p>
+                Alamein International University (AIU) is an Egyptian national, non-profit university inaugurated in 2020 
+                by presidential decree No. 435 of 2020. Located in New Alamein City, Matrouh Governorate, Egypt.
+              </p>
+          
+              <div class="uni-faq-container" id="application-process">
+                <h3 class="uni-faq-title">Additional Information & Eligibility</h3>
+                <ul class="uni-faq-list">
+                  <li>Administrative expenses will be sent to the registered email upon acceptance.</li>
+                  <li>Extra fees apply for international partnership programs, based on the partnering university.</li>
+                  <li>Eligible certificates: Thanaweya Amma, Azhari, STEM, American Diploma, IGCSE, Canadian, French Baccalaureate, IB, Abitur, CNISE.</li>
+                  <li>Applicants must have earned their certificate within the past two years (Egyptian students only).</li>
+                  <li>The University Council sets the minimum admission score for each faculty.</li>
+                </ul>
+              </div>
+          
+              <button class="uni-tuition-toggle-btn" onclick="toggleNewTuition(this)">Show Program Tuition Fees</button>
+          
+              <div class="uni-tuition-container" style="display: none;">
+                <h3 class="uni-tuition-title">Tuition Fees by Program and Field</h3>
+                <table class="uni-tuition-table">
+                  <thead>
+                    <tr>
+                      <th>Field</th>
+                      <th>Programs</th>
+                      <th>Accepted Certificates</th>
+                      <th>Tuition Fees (EGP / semester)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Advanced Basic Sciences</td>
+                      <td>Sustainable Energy, Molecular Biotechnology, Industrial Chemistry</td>
+                      <td>Science & Math tracks</td>
+                      <td>28,500</td>
+                    </tr>
+                    <tr>
+                      <td>Arts & Design</td>
+                      <td>Interior Design, Graphic Design, Game Design, Visual Arts, Apparel Design</td>
+                      <td>Science, Math, Literature</td>
+                      <td>28,500</td>
+                    </tr>
+                    <tr>
+                      <td>Business</td>
+                      <td>Accounting, Marketing, Logistics & Supply Chain</td>
+                      <td>Science, Math, Literature</td>
+                      <td>27,000</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science & Engineering</td>
+                      <td>Cyber Security, AI Engineering, Software Eng., AI Science, Bioinformatics, IT</td>
+                      <td>
+                        Eng./AI Eng.: Math<br>
+                        CS/AI Sci.: Math & Science
+                      </td>
+                      <td>38,000</td>
+                    </tr>
+                    <tr>
+                      <td>Dental Medicine</td>
+                      <td>Dental Medicine and Surgery</td>
+                      <td>Science</td>
+                      <td>59,000</td>
+                    </tr>
+                    <tr>
+                      <td>Engineering</td>
+                      <td>Construction Mgmt., Digital Architecture, Biomedical, Petroleum, Mechatronics, Electronics</td>
+                      <td>Math</td>
+                      <td>38,000</td>
+                    </tr>
+                    <tr>
+                      <td>Pharmacy</td>
+                      <td>Clinical Pharmacy (PharmD)</td>
+                      <td>Science</td>
+                      <td>52,000</td>
+                    </tr>
+                    <tr>
+                      <td>Physical Therapy</td>
+                      <td>Physical Therapy</td>
+                      <td>Science</td>
+                      <td>47,000</td>
+                    </tr>
+                    <tr>
+                      <td>Public Health</td>
+                      <td>Epidemiology and Biostatistics</td>
+                      <td>Science & Math</td>
+                      <td>31,500</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">Minimum Admission Scores <span class="chevron">⌄</span></div>
+                <div class="content">
+                  <table class="uni-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Field</th>
+                        <th>Program</th>
+                        <th>Required Track(s)</th>
+                        <th>Minimum Score (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td rowspan="3">Healthcare</td><td>Dental Medicine</td><td>Science</td><td>75%</td></tr>
+                      <tr><td>Pharmacy</td><td>Science</td><td>70%</td></tr>
+                      <tr><td>Physical Therapy</td><td>Science</td><td>74%</td></tr>
+                      <tr><td rowspan="2">Engineering</td><td>Engineering</td><td>Math</td><td>66%</td></tr>
+                      <tr><td>Computer Engineering</td><td>Math</td><td>66%</td></tr>
+                      <tr><td rowspan="3">Science</td><td>Computer Science</td><td>Science, Math</td><td>60%</td></tr>
+                      <tr><td>Basic Sciences</td><td>Science, Math</td><td>53%</td></tr>
+                      <tr><td>Public Health</td><td>Science, Math</td><td>53%</td></tr>
+                      <tr><td>Humanities</td><td>Business</td><td>Science, Math, Literature</td><td>53%</td></tr>
+                      <tr><td>Creative Arts</td><td>Arts & Design</td><td>Science, Math, Literature</td><td>53%</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          
+              <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion">Minimum Admission Scores – Azhar <span class="chevron">⌄</span></div>
+                <div class="content">
+                  <table class="uni-tuition-table">
+                    <thead>
+                      <tr>
+                        <th>Field</th>
+                        <th>Program</th>
+                        <th>Required Track(s)</th>
+                        <th>Minimum Score (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td rowspan="3">Healthcare</td><td>Dental Medicine</td><td>Science</td><td>75%</td></tr>
+                      <tr><td>Pharmacy</td><td>Science</td><td>70%</td></tr>
+                      <tr><td>Physical Therapy</td><td>Science</td><td>74%</td></tr>
+                      <tr><td rowspan="2">Engineering</td><td>Engineering</td><td>Math</td><td>66%</td></tr>
+                      <tr><td>Computer Engineering</td><td>Math</td><td>66%</td></tr>
+                      <tr><td rowspan="3">Science</td><td>Computer Science</td><td>Science, Math</td><td>60%</td></tr>
+                      <tr><td>Basic Sciences</td><td>Science, Math</td><td>53%</td></tr>
+                      <tr><td>Public Health</td><td>Science, Math</td><td>53%</td></tr>
+                      <tr><td>Humanities</td><td>Business</td><td>Science, Math, Literature</td><td>53%</td></tr>
+                      <tr><td>Creative Arts</td><td>Arts & Design</td><td>Science, Math, Literature</td><td>53%</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          
+              <div class="buttons">
+                <a href="https://maps.app.goo.gl/3mbEdvCrSGTjd4JRA" target="_blank">View Location</a>
+                <a href="https://aiu.edu.eg/" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          
+          <script>
+            function toggleAccordion(item) {
+              item.classList.toggle('active');
+            }
+          
+            function toggleNewTuition(button) {
+              const container = button.nextElementSibling;
+              container.style.display = container.style.display === 'none' ? 'block' : 'none';
+              button.textContent = container.style.display === 'block' ? 'Hide Program Tuition Fees' : 'Show Program Tuition Fees';
+            }
+          </script>
+
+<!--EUOF-->          
+    <div class="university-container" data-city="new-administrative-capital" data-faculties="engineering,computer-science,business,informatics,arts-design">
+        <img src="https://eui.edu.eg/themes/custom/eui/assets/images/main-image-bg.jpg" alt="Egypt University Of Informatics" class="university-image">
+        <div class="university-content">
+            <h2>Egypt University Of Informatics</h2>
+            <p>EUI is committed to providing distinguished education and scientific research environment at the same level as reputable international universities,
+                 which makes it a center for producing knowledge and distinguished highly skilled professionals in fields of information and communication technology and related multi-disciplinary and multi-professional areas. The university will also provide programs for capacity building and providing consultations, including contributions to human, societal and economical development.</p>
+
+
+                 <div class="uni-faq-container" id="tuition-categories">
+                    <h3 class="uni-faq-title">Tuition Fee Categories:</h3>
+                    <ul class="uni-faq-list">
+                      <li><strong>Category C</strong>: Equivalent to the standard tuition fees for the 2024–2025 cohort before any academic merit scholarships.</li>
+                      <li><strong>Category B</strong>: Partial scholarship for holders of Thanaweya Amma (Maths and Science sections) with:
+                        <ul>
+                          <li>Science section: scores from 80% to less than 90%</li>
+                          <li>Literature section: scores from 70% to less than 80%</li>
+                        </ul>
+                      </li>
+                      <li><strong>Category A</strong>: Partial scholarship for holders of Thanaweya Amma with:
+                        <ul>
+                          <li>Science section: scores of 90% or more</li>
+                          <li>Literature section: scores of 80% or more</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>                  
+
+
+                 <button class="uni-tuition-toggle-btn" onclick="toggleNewTuition(this)">Show Program Tuition Fees</button>
+
+                 <div class="uni-tuition-container" style="display: none;">
+                    <h3 class="uni-tuition-title">Tuition Fees by Faculty – 2024-2025</h3>
+                    <table class="uni-tuition-table">
+                      <thead>
+                        <tr>
+                          <th>Faculty</th>
+                          <th>Category C</th>
+                          <th>Category B</th>
+                          <th>Category A</th>
+                          <th>Non-Egyptian</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Engineering</td>
+                          <td>135,000 EGP</td>
+                          <td>115,000 EGP</td>
+                          <td>90,000 EGP</td>
+                          <td>7,500 USD</td>
+                        </tr>
+                        <tr>
+                          <td>Computing and Information Sciences</td>
+                          <td>130,000 EGP</td>
+                          <td>110,000 EGP</td>
+                          <td>85,000 EGP</td>
+                          <td>7,500 USD</td>
+                        </tr>
+                        <tr>
+                          <td>Business Informatics</td>
+                          <td>115,000 EGP</td>
+                          <td>105,000 EGP</td>
+                          <td>75,000 EGP</td>
+                          <td>6,500 USD</td>
+                        </tr>
+                        <tr>
+                          <td>Digital Arts and Design</td>
+                          <td>130,000 EGP</td>
+                          <td>120,000 EGP</td>
+                          <td>85,000 EGP</td>
+                          <td>7,500 USD</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion">Eligible Certificates – Thanaweya Amma <span class="chevron">⌄</span></div>
+                    <div class="content">
+                      <table class="uni-tuition-table">
+                        <thead>
+                          <tr>
+                            <th>Faculty</th>
+                            <th>Eligible Section(s)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engineering</td>
+                            <td>Scientific – Math branch</td>
+                          </tr>
+                          <tr>
+                            <td>Computing & Information Sciences</td>
+                            <td>
+                              Scientific – Biology branch<br>
+                              Scientific – Math branch
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Digital Arts & Design</td>
+                            <td>
+                              Scientific – Biology branch<br>
+                              Scientific – Math branch<br>
+                              Arts section
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Business Informatics</td>
+                            <td>
+                              Scientific – Biology branch<br>
+                              Scientific – Math branch<br>
+                              Arts section
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                  
+                  
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/LjDkd1AXjYyAo43S6" target="_blank">View Location</a>
+                    <a href="https://eui.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    <!--benha-->
+    <div class="university-container" data-city="benha" data-type="national" data-faculties="medicine,engineering,dentistry,computer-science,arts-design,economic,business,physical-therapy,veterinary-medicine">
+      <img src="https://bnu.edu.eg/files/58756_1659513852.jpg" alt="Benha National University" class="university-image">
+      
+      <div class="university-content">
+        <h2>Benha National University</h2>
+        <p>
+          Benha National University is a non-profit national institution and one of the new fourth-generation smart universities. 
+          Located in Al-Obour City, Kalyobiya Governorate, it comprises 10 colleges.
+        </p>
+    
+        <section class="uni-faq-container" id="bnu-info-section">
+          <h3 class="uni-faq-title">About Benha National University</h3>
+          <ul class="uni-faq-list">
+            <li>
+              <strong>Established by Presidential Decree No. 369 of 2022</strong> — Initially launched with 7 colleges:
+              <ul>
+                <li>College of Medicine</li>
+                <li>College of Dentistry</li>
+                <li>College of Physical Therapy</li>
+                <li>College of Engineering</li>
+                <li>College of Applied Health Sciences Technology</li>
+                <li>College of Economics and Business Administration</li>
+                <li>College of Computer Science</li>
+              </ul>
+            </li>
+    
+            <li>
+              <strong>Expanded by Presidential Decree No. 344 of 2023</strong> — Added 3 more colleges:
+              <ul>
+                <li>College of Visual Arts</li>
+                <li>College of Veterinary Medicine</li>
+                <li>College of Energy Sciences</li>
+              </ul>
+            </li>
+    
+            <li>
+              <strong>Academic Year 2022/2023 Launch</strong> — The university started with these 4 colleges:
+              <ul>
+                <li>College of Medicine</li>
+                <li>College of Engineering</li>
+                <li>College of Computer Science</li>
+                <li>College of Economics and Business Administration</li>
+              </ul>
+            </li>
+          </ul>
+    
+          <h4 class="uni-faq-note-heading">Note</h4>
+          <p class="uni-faq-note">
+            Benha National University is rapidly expanding, offering modern programs tailored to meet national and global development goals.
+          </p>
+        </section>
+    
+        <button class="uni-tuition-toggle-btn" onclick="toggleBenhaFees()">Show Benha University Tuition Fees</button>
+    
+        <div id="benha-fees" class="uni-tuition-container" style="display: none;">
+          <h3 class="uni-tuition-title">Benha National University – Tuition Fees</h3>
+          <table class="uni-tuition-table">
+            <thead>
+              <tr>
+                <th>Faculty</th>
+                <th>Tuition Fees (LE)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Medicine</td><td>150,000</td></tr>
+              <tr><td>Dentistry</td><td>120,000</td></tr>
+              <tr><td>Physical Therapy</td><td>100,000</td></tr>
+              <tr><td>Veterinary Medicine</td><td>80,000</td></tr>
+              <tr><td>Engineering</td><td>70,000</td></tr>
+              <tr><td>Computer Science</td><td>65,000</td></tr>
+              <tr><td>Visual Arts & Design</td><td>60,000</td></tr>
+              <tr><td>Economics & Business</td><td>50,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="accordion-item" onclick="toggleAccordion(this)">
+          <div class="accordion">Minimum Admission Score <span class="chevron">⌄</span></div>
+          <div class="content">
+            <div class="research-section">
+              <p><strong>General Admission Policy:</strong></p>
+              <ul>
+                <li><strong>No fixed minimum score thresholds</strong> are publicly disclosed.</li>
+                <li>Admission is based on:
+                  <ul>
+                    <li>Total academic scores</li>
+                    <li>Chronological order of application submission</li>
+                  </ul>
+                </li>
+                <li>If applicant numbers fall below the Ministry's minimum requirement, direct admission may be allowed with University Council approval.</li>
+              </ul>
+        
+              <p><strong>Eligibility:</strong></p>
+              <ul>
+                <li>Egyptian Thanaweya Amma or equivalent certificates (Azhar, STEM, Nile, international diplomas)</li>
+              </ul>
+        
+              <p><strong>Indicative Score Ranges by Faculty:</strong></p>
+              <table class="uni-tuition-table">
+                <thead>
+                  <tr>
+                    <th>Faculty</th>
+                    <th>Approximate Minimum Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Medicine</td><td>91.6%</td></tr>
+                  <tr><td>Dentistry</td><td>91.3%</td></tr>
+                  <tr><td>Pharmacy</td><td>90.7%</td></tr>
+                  <tr><td>Physical Therapy</td><td>90%</td></tr>
+                  <tr><td>Veterinary Medicine</td><td>70%</td></tr>
+                  <tr><td>Engineering</td><td>78%</td></tr>
+                  <tr><td>Computer Science</td><td>62%</td></tr>
+                  <tr><td>Economics & Business</td><td>55%</td></tr>
+                </tbody>
+              </table>
+              <p><em>Note: These percentages are based on general national trends and may vary annually.</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="https://bu.edu.eg/en/" target="_blank">View Location</a>
+              <a href="https://maps.app.goo.gl/CbJutafmRZQJPqp66" target="_blank">Visit Website</a>
+      </div>
+        
+      </div>
+    </div>
+    
+    
+    <script>
+      function toggleBenhaFees() {
+        const section = document.getElementById("benha-fees");
+        const button = event.target;
+        const isHidden = section.style.display === "none";
+    
+        section.style.display = isHidden ? "block" : "none";
+        button.textContent = isHidden 
+          ? "Hide Benha University Tuition Fees" 
+          : "Show Benha University Tuition Fees";
+      }
+    </script>
+    
+    
+
+   
+    <!--nile uni-->
+    <div class="university-container" data-city="el-sheikh-zayed" data-faculties="computer-science,science,engineering,biotechnology,business,administration">
+        <img src="https://www.nu.edu.eg/sites/default/files/2024-06/whatsapp_image_2024-06-25_at_1.33.17_pm.jpeg" alt="Nile University" class="university-image">
+        <div class="university-content">
+            <h2>Nile University</h2>
+            <p>Nile University (NU) is the first non-profit, research and entrepreneurial university in Egypt. 
+                Founded in July 2006 with the support of the Egyptian Ministry of Communications and Information Technology. The university has undergraduate programs and graduate programs alongside its research centers. It is located in Juhayna Square on 26 July Corridor, Sheikh Zayed, Giza. It includes 5 Schools: School of Engineering and Applied Sciences, School of Information Technology and Computer Science, School of Business Administration, School of Biotechnology, Graduate School of Management of Technology.</p>
+
+                <div class="uni-faq-container" id="scholarship-policy">
+                    <h3 class="uni-faq-title">Scholarship Policy</h3>
+                    <ul class="uni-faq-list">
+                      <li><strong>Full Scholarships:</strong> 100% scholarship is offered to 50 students among the top 500 students of Egyptian Thanaweya Amma.</li>
+                      <li><strong>Full Scholarships:</strong> 100% scholarship is offered to 20 students among the top students of STEM schools.</li>
+                      <li><strong>Merit Scholarships:</strong> A merit scholarship is offered to academically outstanding students in the first year based on their high school score.</li>
+                      <li>Siblings of NU students get 10% scholarship.</li>
+                      <li>Government employees' sons and daughters get 10% scholarship.</li>
+                      <li>5% scholarship is granted for excellence in sports.</li>
+                    </ul>
+                  </div>
+                  <button class="uni-tuition-toggle-btn" onclick="toggleNewTuition(this)">Show Program Tuition Fees</button>
+
+                  <div class="nu-tuition-container" style="display: none;">
+                    <h3>Tuition Fees by School - 2024-2025</h3>
+              
+                    <h4>School of Engineering and Applied Sciences</h4>
+                    <table class="tuition-table">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>Discount</th>
+                          <th>Annual Tuition</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Special</td><td>100%</td><td>0</td></tr>
+                        <tr><td>1st</td><td>50%</td><td>72,500 EGP</td></tr>
+                        <tr><td>2nd</td><td>30%</td><td>101,500 EGP</td></tr>
+                        <tr><td>3rd</td><td>15%</td><td>123,250 EGP</td></tr>
+                        <tr><td>4th</td><td>0%</td><td>145,000 EGP</td></tr>
+                      </tbody>
+                    </table>
+              
+                    <h4>School of Information Technology and Computer Science</h4>
+                    <table class="tuition-table">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>Discount</th>
+                          <th>Annual Tuition</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Special</td><td>100%</td><td>0</td></tr>
+                        <tr><td>1st</td><td>50%</td><td>72,500 EGP</td></tr>
+                        <tr><td>2nd</td><td>30%</td><td>101,500 EGP</td></tr>
+                        <tr><td>3rd</td><td>15%</td><td>123,250 EGP</td></tr>
+                        <tr><td>4th</td><td>0%</td><td>145,000 EGP</td></tr>
+                      </tbody>
+                    </table>
+              
+                    <h4>School of Business Administration</h4>
+                    <table class="tuition-table">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>Discount</th>
+                          <th>Annual Tuition</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Special</td><td>100%</td><td>0</td></tr>
+                        <tr><td>1st</td><td>50%</td><td>56,000 EGP</td></tr>
+                        <tr><td>2nd</td><td>30%</td><td>78,400 EGP</td></tr>
+                        <tr><td>3rd</td><td>15%</td><td>95,200 EGP</td></tr>
+                        <tr><td>4th</td><td>0%</td><td>112,000 EGP</td></tr>
+                      </tbody>
+                    </table>
+              
+                    <h4>School of Biotechnology</h4>
+                    <table class="tuition-table">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>Discount</th>
+                          <th>Annual Tuition</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Special</td><td>100%</td><td>0</td></tr>
+                        <tr><td>1st</td><td>50%</td><td>67,500 EGP</td></tr>
+                        <tr><td>2nd</td><td>30%</td><td>94,500 EGP</td></tr>
+                        <tr><td>3rd</td><td>15%</td><td>114,750 EGP</td></tr>
+                        <tr><td>4th</td><td>0%</td><td>135,000 EGP</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion">Minimum Admission Scores<span class="chevron">⌄</span></div>
+                    <div class="content">
+                      <h3>School of Engineering and Applied Sciences</h3>
+                      <table class="uni-tuition-table">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Discount</th>
+                            <th>Thanaweya Amma Score</th>
+                            <th>Annual Fees (EGP)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Special Category</td><td>100%</td><td>Top 500</td><td>0</td></tr>
+                          <tr><td>1<sup>st</sup> Category</td><td>50%</td><td>90% & above</td><td>72,500</td></tr>
+                          <tr><td>2<sup>nd</sup> Category</td><td>30%</td><td>85% to 90%</td><td>101,500</td></tr>
+                          <tr><td>3<sup>rd</sup> Category</td><td>15%</td><td>80% to 85%</td><td>123,250</td></tr>
+                          <tr><td>4<sup>th</sup> Category</td><td>0%</td><td>Below 80%</td><td>145,000</td></tr>
+                        </tbody>
+                      </table>
+                  
+                      <h3>School of IT and Computer Science</h3>
+                      <table class="uni-tuition-table">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Discount</th>
+                            <th>Thanaweya Amma Score</th>
+                            <th>Annual Fees (EGP)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Special Category</td><td>100%</td><td>Top 500</td><td>0</td></tr>
+                          <tr><td>1<sup>st</sup> Category</td><td>50%</td><td>90% & above</td><td>72,500</td></tr>
+                          <tr><td>2<sup>nd</sup> Category</td><td>30%</td><td>85% to 90%</td><td>101,500</td></tr>
+                          <tr><td>3<sup>rd</sup> Category</td><td>15%</td><td>80% to 85%</td><td>123,250</td></tr>
+                          <tr><td>4<sup>th</sup> Category</td><td>0%</td><td>Below 80%</td><td>145,000</td></tr>
+                        </tbody>
+                      </table>
+                  
+                      <h3>School of Business Administration</h3>
+                      <table class="uni-tuition-table">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Discount</th>
+                            <th>Thanaweya Amma Score</th>
+                            <th>Annual Fees (EGP)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Special Category</td><td>100%</td><td>Top 500</td><td>0</td></tr>
+                          <tr><td>1<sup>st</sup> Category</td><td>50%</td><td>90% & above</td><td>56,000</td></tr>
+                          <tr><td>2<sup>nd</sup> Category</td><td>30%</td><td>85% to 90%</td><td>78,400</td></tr>
+                          <tr><td>3<sup>rd</sup> Category</td><td>15%</td><td>80% to 85%</td><td>95,200</td></tr>
+                          <tr><td>4<sup>th</sup> Category</td><td>0%</td><td>Below 80%</td><td>112,000</td></tr>
+                        </tbody>
+                      </table>
+                  
+                      <h3>School of Biotechnology</h3>
+                      <table class="uni-tuition-table">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Discount</th>
+                            <th>Thanaweya Amma Score</th>
+                            <th>Annual Fees (EGP)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>Special Category</td><td>100%</td><td>Top 500</td><td>0</td></tr>
+                          <tr><td>1<sup>st</sup> Category</td><td>50%</td><td>90% & above</td><td>67,500</td></tr>
+                          <tr><td>2<sup>nd</sup> Category</td><td>30%</td><td>85% to 90%</td><td>94,500</td></tr>
+                          <tr><td>3<sup>rd</sup> Category</td><td>15%</td><td>80% to 85%</td><td>114,750</td></tr>
+                          <tr><td>4<sup>th</sup> Category</td><td>0%</td><td>Below 80%</td><td>135,000</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion">Minimum Admission Scores (International Students) <span class="chevron">⌄</span></div>
+                    <div class="content">
+                      <table class="uni-tuition-table">
+                        <thead>
+                          <tr>
+                            <th>School</th>
+                            <th>Tuition Per Credit Hour (USD)</th>
+                            <th>Average Annual Tuition (USD)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>School of Engineering and Applied Sciences</td>
+                            <td>$168</td>
+                            <td>$6,042</td>
+                          </tr>
+                          <tr>
+                            <td>School of Information Technology and Computer Science</td>
+                            <td>$168</td>
+                            <td>$6,042</td>
+                          </tr>
+                          <tr>
+                            <td>School of Business Administration</td>
+                            <td>$137</td>
+                            <td>$4,667</td>
+                          </tr>
+                          <tr>
+                            <td>School of Biotechnology</td>
+                            <td>$165</td>
+                            <td>$5,625</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+            <div class="buttons">
+                <a href="https://maps.app.goo.gl/9NSrC3ez7d4viVtN6" target="_blank">View Location</a>
+                    <a href="https://nu.edu.eg/" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="scrollTopBar" onclick="scrollToTop()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </div>
+
+            <script>
+
+            const scrollTopBar = document.getElementById("scrollTopBar");
+        let hideTimeout;
+
+        document.addEventListener("mousemove", (e) => {
+          const isNearTop = e.clientY < 50;
+          const isNearRight = e.clientX > window.innerWidth - 50;
+
+          if (isNearTop || isNearRight) {
+            scrollTopBar.classList.add("visible");
+            clearTimeout(hideTimeout);
+          } else {
+            clearTimeout(hideTimeout);
+            hideTimeout = setTimeout(() => {
+              scrollTopBar.classList.remove("visible");
+            }, 1500);
+          }
+        });
+
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+        </script>
+
+        
+
+
+        <footer>
+          <p>&copy; 2025 UniGuide. All rights reserved.</p>
+        </footer>
+        
+
+            
+            
+        </body>
+        </html>
